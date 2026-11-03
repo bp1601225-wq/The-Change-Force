@@ -25,7 +25,7 @@ const opportunities = [
     title: 'Partner With Us',
     subtitle: 'Stronger together.',
     description:
-      'Collaborate with us to develop and implement meaningful projects that address real community needs.',
+      'Collaborate with us to explore and implement projects that address community needs and create meaningful impact.',
     action: 'Explore partnership',
     icon: HandHeart,
     color: 'emerald',
@@ -35,7 +35,7 @@ const opportunities = [
     title: 'Support Our Initiatives',
     subtitle: 'Make your contribution count.',
     description:
-      'Help mobilize the resources, knowledge, technology, and expertise needed to advance our mission.',
+      'Help us mobilize the resources, knowledge, and expertise needed to advance our work in education, environmental sustainability, and agricultural innovation.',
     action: 'Support our work',
     icon: HeartHandshake,
     color: 'sky',
@@ -45,7 +45,7 @@ const opportunities = [
     title: 'Volunteer With Us',
     subtitle: 'Your skills can make a difference.',
     description:
-      'Contribute your time, talents, and creativity to initiatives that empower people and communities.',
+      'Contribute your time, skills, and creativity to initiatives that The Change Force — Where Impact Matters.',
     action: 'Become a volunteer',
     icon: Users,
     color: 'amber',
@@ -55,8 +55,8 @@ const opportunities = [
     title: 'Donate',
     subtitle: 'Invest in meaningful change.',
     description:
-      'Support our mission through financial or in-kind contributions that help turn ideas into action.',
-    action: 'Make a contribution',
+      'Support our work through donations that help provide resources and advance initiatives that create sustainable change.',
+    action: 'Make a donation',
     icon: Leaf,
     color: 'violet',
   },
@@ -105,9 +105,9 @@ export default function JoinPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Be part of the movement"
-        title="Change Begins With People Like You."
-        description="Whether through partnership, volunteering, donations, or sharing your expertise, there is a place for you in building a better future."
+        eyebrow="Join The Change"
+        title="Together, We Can Make a Difference."
+        description="Meaningful change begins when people come together around a shared purpose. At The Change Force, everyone has something valuable to contribute — an idea, a skill, a resource, a partnership, or a willingness to make a difference."
       />
 
       <main className="overflow-hidden bg-white">
@@ -129,14 +129,20 @@ export default function JoinPage() {
                 </div>
 
                 <h2 className="mt-8 max-w-2xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
-                  The world changes when
-                  <span className="text-emerald-400"> we choose to act.</span>
+                  Meaningful change begins when
+                  <span className="text-emerald-400"> we come together.</span>
                 </h2>
 
                 <p className="mt-7 max-w-xl text-lg leading-8 text-emerald-100/80">
-                  Meaningful transformation is never the work of one person.
-                  It takes people with ideas, organizations with vision, and
-                  communities willing to work towards something better.
+                  We acknowledge that everyone has something valuable to
+                  contribute — whether it is an idea, a skill, a resource,
+                  a partnership, or a willingness to make a difference.
+                </p>
+
+                <p className="mt-5 max-w-xl text-lg leading-8 text-emerald-100/80">
+                  We welcome opportunities to connect with individuals and
+                  organizations who share our commitment to education,
+                  environmental sustainability, and agricultural innovation.
                 </p>
 
                 <a
@@ -183,13 +189,13 @@ export default function JoinPage() {
             </p>
 
             <h2 className="mt-4 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">
-              Find your way to make a difference.
+              There Is a Place for You in the Change.
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              There are different ways to contribute to our work.
-              Choose the opportunity that best reflects your passion,
-              skills, resources, or organizational goals.
+              Whether you want to partner with us, support our initiatives,
+              volunteer your expertise, or make a donation, your contribution
+              can help us create meaningful and sustainable change.
             </p>
           </div>
 
@@ -214,7 +220,9 @@ export default function JoinPage() {
                       {item.number}
                     </span>
 
-                    <div className={`flex h-14 w-14 items-center justify-center rounded-2xl ${styles[item.color]}`}>
+                    <div
+                      className={`flex h-14 w-14 items-center justify-center rounded-2xl ${styles[item.color]}`}
+                    >
                       <Icon className="h-7 w-7" />
                     </div>
                   </div>
@@ -232,7 +240,7 @@ export default function JoinPage() {
                   </p>
 
                   <a
-                    href="#join-form"
+                    href={item.number === '04' ? '/donate' : '#join-form'}
                     className="mt-7 inline-flex items-center gap-2 border-t border-slate-100 pt-5 text-sm font-bold text-slate-900 transition-colors group-hover:text-emerald-700"
                   >
                     {item.action}
@@ -283,7 +291,9 @@ export default function JoinPage() {
                 {reasons.map(({ icon: Icon, title, description }, index) => (
                   <div
                     key={title}
-                    className={`rounded-3xl border border-slate-200 bg-white p-7 ${index === 1 || index === 2 ? 'sm:translate-y-8' : ''}`}
+                    className={`rounded-3xl border border-slate-200 bg-white p-7 ${
+                      index === 1 || index === 2 ? 'sm:translate-y-8' : ''
+                    }`}
                   >
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
                       <Icon className="h-6 w-6" />
@@ -319,7 +329,7 @@ export default function JoinPage() {
             </p>
 
             <h2 className="mt-4 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">
-              Tell us how you would like to contribute.
+              Tell Us How You Would Like to Contribute.
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-slate-600">
@@ -337,10 +347,10 @@ export default function JoinPage() {
         {/* FINAL CTA */}
         <section className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
           <CallToAction
-            title="Your support can help shape tomorrow."
-            description="Every contribution matters. Whether you give your time, expertise, resources, or support, you can help us create lasting change."
+            title="The Change Force — Where Impact Matters."
+            description="Your ideas, skills, resources, partnerships, and generosity can help transform communities. Take the first step and become part of the change."
             to="/donate"
-            linkText="Support our mission"
+            linkText="Support Our Mission"
           />
         </section>
 

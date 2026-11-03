@@ -10,6 +10,7 @@ import MissionVisionSection from '../components/sections/MissionVisionSection.js
 import ImpactAreaCard from '../components/ui/ImpactAreaCard.jsx';
 
 export default function HomePage({ onOpenPartner, onOpenDonate }) {
+  
   const impactAreas = [
     {
       title: 'Educational Impact',

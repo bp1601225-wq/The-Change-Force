@@ -5,45 +5,74 @@ import PageHeader from '../components/ui/PageHeader.jsx';
 import NotFoundPage from '../components/ui/NotFoundPage.jsx';
 
 const departments = {
-  'educational-impact': {
-    eyebrow: 'Educational Impact',
-    title: 'Educational Impact',
-    intro:
-      'We believe that every young person has potential waiting to be discovered. The Educational Impact Department is dedicated to nurturing talent, strengthening learning opportunities, and equipping young people with the knowledge and practical skills needed to thrive in a rapidly changing world.',
-    description:
-      'Our approach goes beyond traditional learning. We create opportunities for students to explore their interests, discover their strengths, develop their talents, and apply what they learn to real-world challenges.',
-    focusAreas: ['STEM Education', 'Technology Awareness', 'Talent Development', 'Practical Training', 'Mentorship', 'Collaboration'],
-    cta: 'Join Our Educational Impact',
-    link: '/join-the-change',
-    accent: 'emerald',
-    icon: GraduationCap,
-  },
-  'environmental-impact': {
-    eyebrow: 'Environmental Impact',
-    title: 'Environmental Impact',
-    intro:
-      'We believe that environmental challenges can become opportunities for innovation, enterprise, and community transformation.',
-    description:
-      'The Environmental Impact Department is committed to promoting environmental sustainability through waste reduction, recycling, community education, pollution prevention, and practical climate-conscious initiatives.',
-    focusAreas: ['Waste Reduction', 'Recycling and Resource Recovery', 'Environmental Education', 'Pollution Prevention', 'Community Clean-Up Initiatives', 'Sustainable Practices'],
-    cta: 'Join Our Environmental Initiatives',
-    link: '/join-the-change',
-    accent: 'sky',
-    icon: Recycle,
-  },
-  'agricultural-innovation': {
-    eyebrow: 'Agricultural Innovation',
-    title: 'Agricultural Innovation',
-    intro:
-      'We believe agriculture must evolve to meet the challenges of a changing climate and a growing demand for sustainable food production.',
-    description:
-      'The Agricultural Impact Wing explores innovative agricultural practices that improve productivity, strengthen climate resilience, and create new opportunities across agricultural value chains.',
-    focusAreas: ['Climate-Resilient Agriculture', 'Smart Agricultural Technologies', 'Soilless Farming', 'Crop Innovation', 'Agricultural Value Addition', 'Sustainable Food Production'],
-    cta: 'Explore Agricultural Innovation',
-    link: '/join-the-change',
-    accent: 'amber',
-    icon: Sprout,
-  },
+
+
+'educational-impact': {
+  eyebrow: 'Educational Impact',
+  title: 'Educational Impact',
+  intro:
+    'We believe that every young person has potential waiting to be discovered. The Educational Impact Department is dedicated to nurturing talent, strengthening learning opportunities, and equipping young people with the knowledge and practical skills needed to thrive in a rapidly changing world.',
+  description:
+    'We recognize that academic performance alone does not define a person\'s abilities. Some young people excel through creativity, technical skills, problem-solving, innovation, and practical experience.\n\nOur approach goes beyond traditional learning. We seek to create opportunities for students to explore their interests, discover their strengths, develop their talents, and apply what they learn to real-world challenges.\n\nThrough STEM education, technology awareness, practical training, mentorship, and collaborative learning, we aim to inspire the next generation of thinkers, creators, innovators, and problem-solvers.\n\nOur goal is to help young people move from discovering what is possible to developing the skills to make it happen.',
+  focusAreas: [
+    'STEM Education',
+    'Technology Awareness',
+    'Talent Development',
+    'Practical Training',
+    'Mentorship',
+    'Collaborative Learning',
+  ],
+  cta: 'Join Our Educational Impact',
+  link: '/join-the-change',
+  accent: 'emerald',
+  icon: GraduationCap,
+},
+
+
+
+'environmental-impact': {
+  eyebrow: 'Environmental Impact',
+  title: 'Environmental Impact',
+  intro:
+    'We believe that environmental challenges can become opportunities for innovation, enterprise, and community transformation.',
+  description:
+    'The Environmental Impact Department is committed to promoting environmental sustainability through waste reduction, recycling, community education, pollution prevention, and practical climate-conscious initiatives.\n\nWe recognize the growing challenges associated with plastic pollution, improper waste disposal, drainage blockages, and the degradation of natural environments.\n\nOur approach focuses on more than cleaning up polluted spaces. We aim to encourage responsible environmental practices, explore innovative ways to reuse discarded materials, and support communities in adopting sustainable solutions.\n\nBy combining environmental education, community participation, and resource recovery, we seek to promote a culture in which waste is managed responsibly and environmental protection becomes a shared responsibility.',
+  focusAreas: [
+    'Waste Reduction',
+    'Recycling and Resource Recovery',
+    'Environmental Education',
+    'Pollution Prevention',
+    'Community Clean-Up Initiatives',
+    'Sustainable Practices',
+  ],
+  cta: 'Join Our Environmental Initiatives',
+  link: '/join-the-change',
+  accent: 'sky',
+  icon: Recycle,
+},
+
+'agricultural-innovation': {
+  eyebrow: 'Agricultural Innovation',
+  title: 'Agricultural Innovation',
+  intro:
+    'We believe agriculture must evolve to meet the challenges of a changing climate and a growing demand for sustainable food production.',
+  description:
+    'The Agricultural Impact Wing is focused on exploring innovative agricultural practices that can improve productivity, strengthen climate resilience, and create new opportunities across agricultural value chains.\n\nWe recognize the importance of developing farming approaches that respond to changing weather patterns, water limitations, crop losses, and the need for more efficient production systems.\n\nOur work seeks to explore practical and research-informed solutions, including climate-resilient crops, soilless farming, smart agricultural technologies, and opportunities for value addition.\n\nWe are particularly interested in identifying promising crops, exploring improved cultivation methods, and connecting agricultural innovation with entrepreneurship and market opportunities.\n\nThrough collaboration with agricultural experts, research institutions, farmers, and development partners, we aim to contribute to an agricultural sector that is more innovative, productive, and resilient.',
+  focusAreas: [
+    'Climate-Resilient Agriculture',
+    'Smart Agricultural Technologies',
+    'Soilless Farming',
+    'Crop Innovation',
+    'Agricultural Value Addition',
+    'Sustainable Food Production',
+    'Agricultural Entrepreneurship',
+    'Research and Collaboration',
+  ],
+  cta: 'Explore Agricultural Innovation',
+  link: '/join-the-change',
+  accent: 'amber',
+  icon: Sprout,
+},
 };
 
 export default function DepartmentDetailPage() {

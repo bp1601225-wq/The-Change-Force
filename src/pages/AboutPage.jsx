@@ -1,7 +1,6 @@
 
 import {
   ArrowRight,
-  BookOpen,
   Sparkles,
   Target,
   Heart,
@@ -12,9 +11,7 @@ import {
   GraduationCap,
   Recycle,
   Sprout,
-  MoveUpRight,
   Quote,
-  CheckCircle2,
 } from 'lucide-react';
 
 import CallToAction from '../components/ui/CallToAction.jsx';
@@ -26,53 +23,56 @@ const pillars = [
     title: 'Educational Impact',
     subtitle: 'Empowering minds. Unlocking potential.',
     description:
-      'We nurture talent and equip young people with practical skills, digital knowledge, and opportunities to thrive in a rapidly changing world.',
+      'We introduce young people to Artificial STEM, emerging technologies, practical knowledge, and opportunities that nurture their talents and prepare them for a changing world.',
     icon: GraduationCap,
     color: 'emerald',
-    tags: ['STEM Education', 'Digital Skills', 'Youth Development'],
+    tags: ['Artificial STEM', 'Emerging Technologies', 'Youth Development'],
   },
   {
     number: '02',
     title: 'Environmental Impact',
     subtitle: 'Protecting our planet. Inspiring action.',
     description:
-      'We champion environmental responsibility through sustainable practices, waste recovery, environmental awareness, and cleaner communities.',
+      'We promote environmental protection through innovative waste transformation, resource recovery, environmental awareness, and sustainable practices that create cleaner communities.',
     icon: Recycle,
     color: 'sky',
-    tags: ['Waste Management', 'Sustainability', 'Environmental Care'],
+    tags: ['Waste Transformation', 'Sustainability', 'Environmental Care'],
   },
   {
     number: '03',
     title: 'Agricultural Innovation',
     subtitle: 'Growing ideas. Sustaining communities.',
     description:
-      'We explore innovative agricultural practices and sustainable food systems that strengthen livelihoods and create opportunities for communities.',
+      "We explore smart and innovative agricultural practices that address today's challenges, create opportunities, and contribute to sustainable livelihoods and stronger communities.",
     icon: Sprout,
     color: 'amber',
-    tags: ['Smart Agriculture', 'Food Security', 'Innovation'],
+    tags: ['Smart Agriculture', 'Agricultural Innovation', 'Sustainable Livelihoods'],
   },
 ];
-
 const values = [
   {
     icon: Heart,
-    title: 'People First',
-    description: 'We believe meaningful change begins with empowering people and communities.',
+    title: 'People Empowerment',
+    description:
+      'We believe every individual has potential and deserves opportunities to develop, contribute, and thrive.',
   },
   {
     icon: Lightbulb,
     title: 'Innovation',
-    description: 'We embrace creative thinking and practical solutions to everyday challenges.',
+    description:
+      'We embrace creative thinking, new ideas, and practical solutions to address society’s challenges.',
   },
   {
     icon: Leaf,
     title: 'Sustainability',
-    description: 'We pursue solutions that create lasting benefits for future generations.',
+    description:
+      'We pursue meaningful solutions that protect our environment and create lasting benefits for future generations.',
   },
   {
     icon: Users,
     title: 'Collective Action',
-    description: 'We believe collaboration makes transformation possible.',
+    description:
+      'We believe lasting transformation happens when individuals and communities work together.',
   },
 ];
 
@@ -81,43 +81,61 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="Who we are"
-        title="Creating Change. Empowering Possibilities."
-        description="The Change Force is a non-governmental organization committed to empowering people, nurturing talent, protecting the environment, and advancing agricultural innovation."
+        title="We Are a Force for Positive Change."
+        description="The Change Force (TCF) is a non-governmental organization committed to empowering people, nurturing talents, protecting the environment, and advancing agricultural innovation to create sustainable and meaningful change in society."
       />
 
       <main className="overflow-hidden bg-white">
 
-        {/* INTRODUCTION */}
+        {/* ABOUT THE CHANGE FORCE */}
         <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="grid items-center gap-14 lg:grid-cols-2">
 
             <div>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-2 text-sm font-bold text-emerald-700">
                 <Sparkles className="h-4 w-4" />
-                More than an organization
+                About The Change Force
               </div>
 
               <h2 className="max-w-xl text-4xl font-black leading-tight tracking-tight text-slate-950 sm:text-5xl">
-                We believe in the power of
-                <span className="text-emerald-600"> people to change the world.</span>
+                Every possibility deserves an
+                <span className="text-emerald-600"> opportunity to thrive.</span>
               </h2>
 
               <div className="mt-8 space-y-5 text-lg leading-8 text-slate-600">
                 <p>
-                  Every individual has potential. Every idea holds possibilities.
-                  And every community deserves an opportunity to thrive.
+                  We believe that every individual has potential, every idea
+                  can spark transformation, and every community deserves the
+                  opportunity to thrive.
                 </p>
 
                 <p>
-                  But meaningful transformation requires more than good intentions.
-                  It requires access to knowledge, practical skills, innovation,
-                  opportunity, and people willing to make a difference.
+                  However, unlocking this potential requires more than
+                  inspiration. It requires access to opportunities, practical
+                  knowledge, innovative solutions, and the collective effort
+                  to turn possibilities into reality.
                 </p>
 
                 <p>
-                  That is where The Change Force comes in. We turn possibilities
-                  into practical action, creating pathways that empower individuals
-                  and strengthen communities.
+                  Through our three impact-driven departments — Educational
+                  Impact, Environmental Impact, and Agricultural Innovation —
+                  we work to bridge gaps, develop practical solutions, and
+                  create opportunities that respond to the needs of
+                  individuals and communities.
+                </p>
+
+                <p>
+                  From introducing young people to Artificial STEM and
+                  emerging technologies, to transforming waste into useful
+                  resources, and exploring smart and innovative agricultural
+                  practices, we are committed to finding innovative ways to
+                  address today's challenges while building a better tomorrow.
+                </p>
+
+                <p>
+                  At The Change Force, we see challenges not as barriers,
+                  but as opportunities to innovate, collaborate, and create
+                  lasting solutions.
                 </p>
               </div>
 
@@ -130,7 +148,7 @@ export default function AboutPage() {
               </a>
             </div>
 
-            {/* VISUAL STORY */}
+            {/* ORGANIZATIONAL COMMITMENT */}
             <div className="relative">
               <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-emerald-100 blur-3xl" />
               <div className="absolute -bottom-8 -left-8 h-40 w-40 rounded-full bg-sky-100 blur-3xl" />
@@ -144,12 +162,13 @@ export default function AboutPage() {
                 </p>
 
                 <h3 className="mt-8 max-w-md text-4xl font-black leading-tight sm:text-5xl">
-                  A better future doesn't happen by chance.
+                  Turning possibilities into meaningful change.
                 </h3>
 
                 <p className="mt-6 max-w-sm leading-7 text-slate-300">
-                  It happens when people are empowered, ideas are nurtured,
-                  and communities are given the tools to thrive.
+                  We empower people, nurture ideas, develop innovative
+                  solutions, and create opportunities for individuals
+                  and communities to thrive.
                 </p>
 
                 <div className="mt-12 grid grid-cols-3 gap-3 border-t border-white/15 pt-8">
@@ -157,10 +176,12 @@ export default function AboutPage() {
                     <GraduationCap className="mb-3 h-7 w-7 text-emerald-400" />
                     <p className="text-sm font-bold">Education</p>
                   </div>
+
                   <div>
                     <Leaf className="mb-3 h-7 w-7 text-emerald-400" />
                     <p className="text-sm font-bold">Environment</p>
                   </div>
+
                   <div>
                     <Sprout className="mb-3 h-7 w-7 text-emerald-400" />
                     <p className="text-sm font-bold">Agriculture</p>
@@ -172,7 +193,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* STATEMENT */}
+        {/* ORGANIZATIONAL STATEMENT */}
         <section className="bg-emerald-700 px-4 py-20 text-white">
           <div className="mx-auto max-w-5xl text-center">
             <Quote className="mx-auto mb-8 h-12 w-12 text-emerald-300" />
@@ -189,20 +210,21 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* THREE PILLARS */}
+        {/* THREE IMPACT DEPARTMENTS */}
         <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
           <div className="mx-auto mb-14 max-w-2xl text-center">
             <p className="text-sm font-black uppercase tracking-[0.22em] text-emerald-700">
-              What drives us
+              What we do
             </p>
 
             <h2 className="mt-4 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">
-              Three pathways to meaningful change.
+              Three departments. One mission.
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Our work is built around three interconnected areas designed
-              to address real challenges and create lasting impact.
+              Through our three impact-driven departments, we develop
+              practical solutions, nurture potential, and create
+              opportunities for sustainable community development.
             </p>
           </div>
 
@@ -283,6 +305,7 @@ export default function AboutPage() {
               <p className="text-sm font-bold uppercase tracking-[0.22em] text-emerald-400">
                 Our direction
               </p>
+
               <h2 className="mt-4 text-4xl font-black sm:text-5xl">
                 Driven by purpose.
                 <span className="text-emerald-400"> Guided by vision.</span>
@@ -300,8 +323,9 @@ export default function AboutPage() {
                 </p>
 
                 <h3 className="mt-5 text-2xl font-bold leading-relaxed sm:text-3xl">
-                  To empower and develop society through talent nurturing,
-                  environmental care, and agricultural innovation.
+                  To empower people, nurture talents, protect the
+                  environment, and advance agricultural innovation
+                  through practical solutions and sustainable opportunities.
                 </h3>
               </div>
 
@@ -315,7 +339,9 @@ export default function AboutPage() {
                 </p>
 
                 <h3 className="mt-5 text-2xl font-bold leading-relaxed sm:text-3xl">
-                  To create a future where talents, ideas, and communities thrive.
+                  To create a society where individuals reach their
+                  potential, communities thrive, and innovative
+                  solutions drive sustainable development.
                 </h3>
               </div>
             </div>
@@ -328,6 +354,7 @@ export default function AboutPage() {
             <p className="text-sm font-black uppercase tracking-[0.2em] text-emerald-700">
               What we stand for
             </p>
+
             <h2 className="mt-4 text-4xl font-black text-slate-950 sm:text-5xl">
               The values behind our work.
             </h2>
@@ -355,8 +382,8 @@ export default function AboutPage() {
         {/* FINAL CTA */}
         <section className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
           <CallToAction
-            title="The future changes when we act today."
-            description="Your ideas, skills, partnership, and support can help us build stronger communities and create opportunities for generations to come. Join The Change Force."
+            title="Be part of the change we want to see."
+            description="Your ideas, skills, partnership, and support can help us empower people, protect the environment, advance agricultural innovation, and build stronger communities. Join The Change Force."
             to="/join-the-change"
             linkText="Become part of the movement"
           />
