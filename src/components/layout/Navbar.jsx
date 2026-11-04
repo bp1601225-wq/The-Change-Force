@@ -30,7 +30,8 @@ export default function Navbar({ onOpenPartner, onOpenDonate }) {
               whileHover={{ scale: 1.05, rotate: 5 }}
               className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-sky-500 text-white shadow-md shadow-emerald-600/20"
             >
-              <Compass className="h-6 w-6" />
+              {/* <Compass className="h-6 w-6" /> */}
+<img src={Logo} alt="" />
             </motion.div>
             <div className="hidden sm:block">
               <span className="block text-xl font-black leading-none tracking-tight text-slate-900">The Change Force</span>

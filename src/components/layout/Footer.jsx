@@ -1,5 +1,7 @@
 import { Compass } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Logo from '../../../src/assets/image.png';
+
 
 const mainLinks = [
   { label: 'Home', to: '/' },
@@ -25,6 +27,8 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-600 text-white">
+             
+             <img src={Logo} alt="" />
               <Compass className="h-6 w-6" />
             </div>
             <div>
